@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bish-Bosh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>Bish Bosh</header>
+
+    <div class="container">
+        <div id = "input-container">
+            <label>Nummer av loop: </label>
+            <input id="loop" type="number" min="1" value="100" max="100"/>
+
+            <label>Bish: </label>
+            <input id = "bish" type="number" min="1" value="3" max="100"/>
+
+            <label >Bosh: </label>
+            <input id="bosh" type="number" min="1" value="4" max="100"/>
+            
+            <button type="submit" onclick="runBishBosh()">Start</button>
+        </div>
+
+        <div id="output-container">
+            <h2>Beskivning</h2>
+            <p>Bish-Bosh listar alla tal mellan 1 och 100, men vissa undantag: Om talet är jämnt delbart
+                med 3 listas ‘Bish’ istället för talet. Om talet är jämnt delbart med 4 listas ‘Bosh’ istället för
+                talet. Om talet är jämnt delbart med både med 3 och 4 skrivs “Bish-Bosh” istället för talet.
+            </p>
+            
+            <p>
+                Exempel:
+                1, 2, Bish, Bosh, 5, Bish, 7, Bosh, Bish, 10, 11, Bish-Bosh, 13, 14, Bish [...]
+            </p>
+            <div>
+                <h2>Output: </h2>
+                <p id="output"></pi>
+            </div>
+        </div>
+    </div>
+    
+    <footer>&copy; 2024 Emre Demirel</footer>
+
+    <script src="bishbosh.js"></script>
+    
+</body>
+</html>
